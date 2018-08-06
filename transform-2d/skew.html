@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skew</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box"></div>
+    <button>SKEW</button>
+</body>
+<script>
+    window.onload = () => {
+        const oBox = document.getElementById("box");
+        const oBtn = document.getElementsByTagName("button")[0];
+
+        oBtn.onclick = () => {
+            oBox.style.transform = 'skew(30deg,20deg)';
+        }
+    }
+</script>
+</html>

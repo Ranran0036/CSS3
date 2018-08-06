@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skew_2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box{
+            width: 600px;
+            height: 400px;
+            background-color: grey;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .font,.top,.right{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            transform-origin: left bottom;
+        }
+
+        .font{
+            background-color: red;
+            left: 250px;
+            top: 170px;
+        }
+
+        .top{
+            background-color: green;
+            left: 250px;
+            top: 70px;
+            transform: skewX(-45deg) scaleY(0.60);
+        }
+
+        .right{
+            background-color: blue;
+            left: 350px;
+            top: 170px;
+            transform: skewY(-45deg) scaleX(0.6);
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="font"></div>
+        <div class="top"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>
